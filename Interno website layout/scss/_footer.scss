@@ -1,0 +1,141 @@
+.footer {
+  margin-top: 135px;
+
+  &__top {
+    padding: 0 0 134px;
+  }
+
+  &__top__inner {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .logo {
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    max-width: 393px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 54px;
+    justify-content: flex-start;
+  }
+
+  &__bottom {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__bottom__text {
+    text-align: center;
+    padding: 46px 0;
+  }
+
+  &__inner__list {
+    display: flex;
+    flex-direction: column;
+
+    text-transform: capitalize;
+  }
+
+  &__inner__item {
+    margin-bottom: 40px;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__inner__item b {
+    color: #292f36;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 31.25px */
+  }
+
+  &__inner__text {
+    max-width: 258px;
+  }
+
+  &__top__inner__first-item {
+    padding: 20px 0 0;
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    &__top__inner {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 60px;
+    }
+
+    &__top__inner__first-item {
+      grid-column: 1/4;
+    }
+
+    &__inner__list {
+      padding: 0;
+    }
+
+    &__top {
+      padding: 0 25px 134px;
+    }
+
+    &__inner__item {
+      margin-bottom: 30px;
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    &__top__inner {
+      row-gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__inner__list {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__top__inner__first-item {
+      grid-column: 1/3;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .footer {
+    &__top__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__top__inner__first-item {
+      grid-column: 1/2;
+    }
+
+    &__inner__first-item,
+    &__inner__second-item,
+    &__inner__third-item,
+    &__inner__fourth-item {
+      justify-self: center;
+      text-align: center;
+    }
+
+   
+  }
+}
