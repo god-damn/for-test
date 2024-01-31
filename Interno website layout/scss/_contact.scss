@@ -1,0 +1,114 @@
+.contact {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background-color: #292f36;
+  padding: 80px 300px;
+  border-radius: 70px;
+
+  &__inner {
+    max-width: 570px;
+  }
+
+  &__title {
+    text-transform: none;
+    color: #fff;
+    margin-bottom: 11px;
+  }
+
+  &__text {
+    color: #fff;
+    margin-bottom: 42px !important;
+  }
+
+  &__btn {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.36px;
+
+    padding: 26px 57px 26px 37px;
+
+    border-radius: 18px;
+    background: #cda274;
+    box-shadow: 0px 10px 20px 0px #1f2022;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../img/contact/arrow.png);
+      width: 18px;
+      height: 18px;
+      top: 40%;
+      right: 13%;
+    }
+  }
+}
+
+@media (max-width: 1441px) {
+  .contact {
+    &__text {
+      margin-bottom: 30px !important;
+    }
+  }
+}
+
+@media (max-width: 1202px) {
+  .contact {
+    margin: 0 15px;
+    padding: 80px 200px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .contact {
+    max-width: 988px;
+    padding: 80px 0;
+
+    &__inner {
+      max-width: 988px;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .contact {
+    padding: 60px 0 80px;
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 322px) {
+  .contact {
+    border-radius: 50px;
+    padding: 60px 0 100px;
+    &__inner {
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+    &__btn {
+      padding: 20px 50px 20px 20px;
+
+      &::after {
+        top: 36%;
+      }
+
+    }
+
+    &__title{
+    font-size: 30px;
+    }
+
+  }
+}
