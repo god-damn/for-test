@@ -214,12 +214,12 @@ body {
 }
 @media (max-width: 320px) {
   .logo {
-    top: 70px !important;
+    top: 50px !important;
     left: 25px !important;
   }
   .header__inner__mobile .burger-btn {
     right: 20px;
-    top: 97px;
+    top: 77px;
   }
 }
 .hero {
