@@ -1,0 +1,36 @@
+body {
+  font-size: 18px;
+  font-family: $font-main;
+  color: $main-text-color;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.subtitle {
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: auto;
+  color: $main-text-color;
+  text-align: center;
+}
+
+.title {
+  font-family: $font-accent;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: auto;
+  text-transform: capitalize;
+  color: $title-color;
+  text-align: center;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
