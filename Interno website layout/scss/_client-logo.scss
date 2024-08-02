@@ -1,0 +1,27 @@
+.client-logo {
+  padding: 150px 0 200px;
+
+  &__inner {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 770px) {
+  .client-logo {
+    &__inner {
+      gap: 0px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .client-logo {
+    &__inner {
+      flex-direction: column;
+      gap: 70px;
+    }
+  }
+}
